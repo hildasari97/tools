@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RP Tools Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<!-- Telegram Ads (RichInfo) -->
+<script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
+<script>
+  window.TelegramAdsController = new TelegramAdsController();
+  window.TelegramAdsController.initialize({
+    pubId: "1008570",
+    appId: "7076",
+  });
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>RP Tools</h1>
+
+<input
+id="searchInput"
+type="text"
+placeholder="Search sexy model, korean girl, handsome boy..."
+>
+
+<button onclick="searchImages()">Search</button>
+
+<div class="filters">
+<button onclick="setCategory('nsfw girl')">NSFW Girl</button>
+<button onclick="setCategory('nsfw boy')">NSFW Boy</button>
+<button onclick="setCategory('korean model')">Korea</button>
+<button onclick="setCategory('western model')">Western</button>
+<button onclick="setCategory('sexy girl')">Girl</button>
+<button onclick="setCategory('handsome man')">Man</button>
+</div>
+</header>
+
+<div id="gallery"></div>
+
+<div id="loader">Loading...</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
